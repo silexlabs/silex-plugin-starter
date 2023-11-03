@@ -2,14 +2,15 @@
   "name": "@silexlabs/silex-plugin-starter",
   "version": "0.0.0",
   "description": "Silex plugin",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/server.js",
+  "module": "dist/client.js",
   "files": [
     "dist",
     "src",
     "LICENSE"
   ],
   "scripts": {
+    "start": "silex --client-config ./dist/client.js --server-config `pwd`/dist/server.js --port 3000 --debug",
     "build": "$npm_execpath run build:client && $npm_execpath run build:server",
     "build:watch": "nodemon -e ts,js --watch src -x \"$npm_execpath run build\"",
     "build:client": "rollup -c rollup.client.config.mjs",

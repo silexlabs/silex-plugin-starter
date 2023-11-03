@@ -7,7 +7,7 @@ export default {
   input: 'src/client.ts',
   output: {
     file: 'dist/client.js',
-    format: 'cjs',
+    format: 'es',
     sourcemap: true,
   },
   external: ['@silexlabs/silex'],

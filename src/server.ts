@@ -1,3 +1,3 @@
-export default function () {
-  console.log('server.ts');
+export default function (config, options) {
+  console.log('server.ts', { config, options });
 }
