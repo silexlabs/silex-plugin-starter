@@ -69,10 +69,10 @@ Build and watch for changes
 $ npm run build:watch
 ```
 
-Start the dev server on port 3000
+Start the dev server on port 3000 with watch and debug
 
 ```sh
-$ npm start
+$ npm run dev
 ```
 
 Publish a new version
