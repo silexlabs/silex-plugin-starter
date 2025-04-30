@@ -20,6 +20,11 @@
     "lint:fix": "$npm_execpath run lint -- --fix",
     "test": "jest --rootDir src"
   },
+  "keywords": [
+    "silex",
+    "silex-plugin",
+    "plugin"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
