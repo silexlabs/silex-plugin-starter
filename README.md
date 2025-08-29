@@ -63,6 +63,12 @@ Install dependencies
 $ npm i
 ```
 
+Build the project
+
+```sh
+$ npm run build
+```
+
 Build and watch for changes
 
 ```sh
