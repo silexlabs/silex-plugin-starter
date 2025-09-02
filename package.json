@@ -7,6 +7,7 @@
   "files": [
     "dist",
     "src",
+    "README.md",
     "LICENSE"
   ],
   "scripts": {
@@ -26,7 +27,7 @@
     "plugin"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^25.0.7",
