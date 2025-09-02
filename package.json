@@ -26,7 +26,10 @@
     "silex-plugin",
     "plugin"
   ],
-  "author": "",
+  "author": {
+    "name": "Alex Hoyau",
+    "url": "https://lexoyo.me/"
+  },
   "license": "AGPL-3.0",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
