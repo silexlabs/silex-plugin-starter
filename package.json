@@ -30,6 +30,10 @@
     "name": "Alex Hoyau",
     "url": "https://lexoyo.me/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silexlabs/silex-plugin-starter.git"
+  },
   "license": "AGPL-3.0",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
