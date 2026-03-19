@@ -1,6 +1,6 @@
 # Silex Plugin Starter
 
-A good place to start writing a Silex plugin. It supports server and/or client side plugins, in Javascript and TypeScript. Check [Silex developer docs if you need help](https://docs.silex.me/en/dev) or [join the discussions in the forum](https://community.silex.me/)
+Starter template for writing Silex plugins. Supports server and/or client side plugins in JavaScript and TypeScript.
 
 Start creating your plugin from `src/main.js` or `src/main.ts`, [read the Development section](#development)
 
