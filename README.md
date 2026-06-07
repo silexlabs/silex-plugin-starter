@@ -10,12 +10,12 @@ Here is a list of things to do before distributing your plugin to Silex users
 
 * [ ] Replace `silex-plugin-starter` in all files with your plugin name
 * [ ] Choose Javascript or TypeScript: edit rollup configs and just change the input from `main.ts` to `main.js`
-* [ ] Choose client side and or server side: edit `build` script in `package.json`, add/remove `npm run build:client` or `npm run builde:server`
+* [ ] Choose client side and or server side: edit `build` script in `package.json`, add/remove `yarn run build:client` or `yarn run builde:server`
 * [ ] Tests: when writing tests for the client, add a "doc block" with `@jest-environment jsdom`
 * [ ] Automate npm publish with github actions: you need to set the package `name` in `package.json` and the action secret `NPM_SECRET` in github
 * [ ] Remove this "TODO" section and fill in the blanks in the rest of the README
 * [ ] Show some gif/demo if possible
-* [ ] Run `npm test` and `npm run lint:fix`, create a version with `npm version patch` then push to github with `git push oringin main --follow-tags` which will **publish to npm thanks to github actions**
+* [ ] Run `yarn test` and `yarn run lint:fix`, create a version with `npm version patch` then push to github with `git push oringin main --follow-tags` which will **publish to npm thanks to github actions**
 
 > **Add a gif or a live demo of your plugin here**
 
@@ -26,7 +26,7 @@ This is how to use the silex-plugin-starter plugin in your Silex instance or JS 
 Add as a dependency
 
 ```bash
-$ npm i --save @silexlabs/silex-plugin-starter
+$ yarn add --save @silexlabs/silex-plugin-starter
 ```
 
 Add to Silex config (client or server)
@@ -60,32 +60,32 @@ $ cd silex-plugin-starter
 Install dependencies
 
 ```sh
-$ npm i
+$ yarn install
 ```
 
 Build the project
 
 ```sh
-$ npm run build
+$ yarn run build
 ```
 
 Build and watch for changes
 
 ```sh
-$ npm run build:watch
+$ yarn run build:watch
 ```
 
 Start the dev server on port 3000 with watch and debug
 
 ```sh
-$ npm run dev
+$ yarn run dev
 ```
 
 Publish a new version
 
 ```sh
-$ npm test
-$ npm run lint:fix
+$ yarn test
+$ yarn run lint:fix
 $ git commit -am "new feature"
 $ npm version patch
 $ git push origin main --follow-tags
