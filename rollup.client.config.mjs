@@ -1,5 +1,4 @@
 import typescript from '@rollup/plugin-typescript';
-import eslint from '@rollup/plugin-eslint';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
@@ -14,7 +13,6 @@ export default {
   plugins: [
     typescript(), // Supports typescript
     nodeResolve(), // Import modules from node_modules
-    eslint(), // Linting
     commonjs(), // Convert CommonJS modules to ES6 when importing node_modules
   ],
 };
