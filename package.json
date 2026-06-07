@@ -14,11 +14,11 @@
     "start": "silex --client-config ./dist/client.js --server-config `pwd`/dist/server.js",
     "dev": "SILEX_CLIENT_CONFIG=./dist/client.js SILEX_SERVER_CONFIG=`pwd`/dist/server.js SILEX_PORT=3000 SILEX_DEBUG=true nodemon ../../node_modules/@silexlabs/silex",
     "build": "yarn build:client && yarn build:server",
-    "build:watch": "nodemon -e ts,js --watch src -x \"$npm_execpath run build\"",
+    "build:watch": "nodemon -e ts,js --watch src -x \"yarn run build\"",
     "build:client": "rollup -c rollup.client.config.mjs",
     "build:server": "rollup -c rollup.server.config.mjs",
     "lint": "eslint src/**/*.[jt]s",
-    "lint:fix": "$npm_execpath run lint -- --fix",
+    "lint:fix": "yarn lint --fix",
     "test": "jest --rootDir src"
   },
   "keywords": [
