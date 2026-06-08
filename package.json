@@ -13,12 +13,12 @@
   "scripts": {
     "start": "silex --client-config ./dist/client.js --server-config `pwd`/dist/server.js",
     "dev": "SILEX_CLIENT_CONFIG=./dist/client.js SILEX_SERVER_CONFIG=`pwd`/dist/server.js SILEX_PORT=3000 SILEX_DEBUG=true nodemon ../../node_modules/@silexlabs/silex",
-    "build": "$npm_execpath run build:client && $npm_execpath run build:server",
-    "build:watch": "nodemon -e ts,js --watch src -x \"$npm_execpath run build\"",
+    "build": "yarn build:client && yarn build:server",
+    "build:watch": "nodemon -e ts,js --watch src -x \"yarn run build\"",
     "build:client": "rollup -c rollup.client.config.mjs",
     "build:server": "rollup -c rollup.server.config.mjs",
     "lint": "eslint src/**/*.[jt]s",
-    "lint:fix": "$npm_execpath run lint -- --fix",
+    "lint:fix": "yarn lint --fix",
     "test": "jest --rootDir src"
   },
   "keywords": [
@@ -38,7 +38,6 @@
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-eslint": "^9.2.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
     "@silexlabs/silex": "3.7.0-canary.1",
