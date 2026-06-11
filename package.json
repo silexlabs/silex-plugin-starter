@@ -17,8 +17,6 @@
     "build:watch": "nodemon -e ts,js --watch src -x \"yarn run build\"",
     "build:client": "rollup -c rollup.client.config.mjs",
     "build:server": "rollup -c rollup.server.config.mjs",
-    "lint": "eslint src/**/*.[jt]s",
-    "lint:fix": "yarn lint --fix",
     "test": "jest --rootDir src"
   },
   "keywords": [
